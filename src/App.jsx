@@ -10,6 +10,7 @@ import Profile from './Context/Profile';
 import ConteextP from './c/ConteextP';
 import Datas from './c/Datas';
 import Register from './c/Register';
+import Todo from './todo/Todo';
  
  
  
@@ -92,6 +93,7 @@ const App = () => {
 
   return (
     <div>
+      <Todo/>
  
       <ConteextP>
         <Register/>
