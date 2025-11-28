@@ -31,7 +31,7 @@ const Todo = () => {
                 })
             )
             setEdit(null);
-            setEdit("");
+            setInput("");
             setToggle(false)
         }
         else {
