@@ -13,8 +13,8 @@ const Bgchange = () => {
             onClick={()=>setColor('Pink')}
             >Pink</button>
             <button style={{padding:'4px'}}
-            onClick={()=>setColor('yellow')}
-            >Yellowk</button>
+            onClick={()=>setColor('blue')}
+            >Blue</button>
             
         </div>
     </div>
