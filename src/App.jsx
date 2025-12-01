@@ -11,6 +11,7 @@ import ConteextP from './c/ConteextP';
 import Datas from './c/Datas';
 import Register from './c/Register';
 import Todo from './todo/Todo';
+import Pgrenator from './Pgrenator';
  
  
  
@@ -93,6 +94,7 @@ const App = () => {
 
   return (
     <div>
+      <Pgrenator/>
       <Todo/>
  
       <ConteextP>
