@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Todos from './Todos';
 
 const getLocalData = () => {
     let lists = localStorage.getItem("baba");
@@ -57,6 +58,7 @@ const Todo = () => {
     }
     return (
         <div>
+            <Todos/>
             <h2>Add Todo</h2>
             <form onSubmit={addTodo}>
                 <input type="text" placeholder='Add Task ... ' value={input} onChange={(e) => setInput(e.target.value)} />
