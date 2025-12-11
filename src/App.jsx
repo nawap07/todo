@@ -12,10 +12,11 @@ import Datas from './c/Datas';
 import Register from './c/Register';
 import Todo from './todo/Todo';
 import Pgrenator from './Pgrenator';
- 
- 
- 
- 
+import Tudu from './todo/Tudu';
+
+
+
+
 const localDatas = () => {
   const lists = localStorage.getItem("Datas");
   if (lists) {
@@ -82,35 +83,36 @@ const App = () => {
   const removeData = () => {
     setData([]);
   }
-  const[themBtn,setThemeBtn]=useState('light');
+  const [themBtn, setThemeBtn] = useState('light');
 
-  const onDarkMode=()=>{
+  const onDarkMode = () => {
     setThemeBtn('dark')
   }
 
-  const onLightMode=()=>{
+  const onLightMode = () => {
     setThemeBtn('light');
   }
 
   return (
     <div>
-      <Pgrenator/>
-      <Todo/>
- 
+      <Tudu />
+      <Pgrenator />
+      <Todo />
+
       <ConteextP>
-        <Register/>
-        <Datas/>
+        <Register />
+        <Datas />
       </ConteextP>
       <ProviderWrapper value={{ themBtn, onDarkMode, onLightMode }}>
         <Theme />
       </ProviderWrapper>
 
-  
-  <ContextProvier>
-    <Login/>
-    <Profile/>
-  </ContextProvier>
-       
+
+      <ContextProvier>
+        <Login />
+        <Profile />
+      </ContextProvier>
+
       <PasswordGenerator />
       <Bgchange />
       <Data />
