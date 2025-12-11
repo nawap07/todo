@@ -13,6 +13,7 @@ import Register from './c/Register';
 import Todo from './todo/Todo';
 import Pgrenator from './Pgrenator';
 import Tudu from './todo/Tudu';
+import PassGenerator from './PassGenerator';
 
 
 
@@ -95,6 +96,7 @@ const App = () => {
 
   return (
     <div>
+      <PassGenerator />
       <Tudu />
       <Pgrenator />
       <Todo />
